@@ -30,7 +30,7 @@ resource "aws_instance" "example-server1" {
 resource "aws_instance" "example-server2" {
     ami = "${data.aws_ami.ubuntu.id}"
     instance_type = "t2.micro"
-    subnet_id = "${aws_subnet.example-b.id}"
+    subnet_id = "${aws_subnet.example-c.id}"
     vpc_security_group_ids = ["${aws_security_group.example-allow-all.id}"]
     key_name = "${var.key_pair}"
     count = 1
