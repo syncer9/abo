@@ -1,5 +1,5 @@
 variable "key_pair" {
-  default = "ec2_syncer00001"
+  default = "ec2_syncer00002"
 }
 
 data "aws_ami" "ubuntu" {
